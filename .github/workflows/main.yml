@@ -26,7 +26,7 @@ jobs:
         with:
           buildPath: "public"
           hugoVersion: ""
-          args: ""
+          args: --gc --minify --cleanDestinationDir
 
       - name: Azure Blob Storage Upload
         uses: bacongobbler/azure-blob-storage-upload@v1.1.0
