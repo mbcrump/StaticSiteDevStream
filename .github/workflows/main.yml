@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Hugo-Site
         uses: chabad360/hugo-actions@1.0.0
-          with:
+        with:
           buildPath: ./public
           args: ""
           hugoVersion: ""
