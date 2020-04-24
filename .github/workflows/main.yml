@@ -22,6 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Build Site
       - uses: chabad360/hugo-actions@master
         with:
           buildPath: "public"
@@ -31,7 +32,7 @@ jobs:
       - name: Azure Blob Storage Upload
         uses: bacongobbler/azure-blob-storage-upload@v1.1.0
         with:
-          source_dir: 'public'
-          container_name: '$web'
+          source_dir: "public"
+          container_name: "$web"
           connection_string: ${{ secrets.TWITCHSA }}
           sync: true
