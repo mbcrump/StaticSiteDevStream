@@ -24,11 +24,4 @@ jobs:
 
     - name: Hugo-Site
       uses: chabad360/hugo-actions@1.0.0
-      with:
-      # The path to build the site to
-        buildPath: ./public
-      # Arguments to pass to Hugo
-        args: ""
-      # The version of Hugo to use
-        hugoVersion: ""
- 
+    
